@@ -1,0 +1,9 @@
+
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content.is-tabs-content-active {
+    display: block;
+}
