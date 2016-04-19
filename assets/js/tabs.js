@@ -25,7 +25,6 @@
 
         var closureFn = function(idx, thisEl) {
             link.addEventListener('click', function(e) {
-                console.log("hi");
                 e.preventDefault();
                 thisEl.goToTab(idx);
             });
@@ -45,7 +44,6 @@
         var activeIdx = this.activeIndex;
 
         if( idx !== activeIdx && idx >=0 && idx < links.length ) {
-            console.log(2);
             links[activeIdx].classList.remove("is-tabs-link-active");
             content[activeIdx].classList.remove("is-tabs-content-active");
             links[idx].classList.add("is-tabs-link-active");

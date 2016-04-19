@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;
+}
+
+.tabs-link {
+    display: inline-block;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content.is-tabs-content-active {
+    display: block;
+}
+
+.tabs-incident {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+}
+
+.tabs-incident-link {
+    display: block;
+}
