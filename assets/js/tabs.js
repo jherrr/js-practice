@@ -11,7 +11,7 @@
         this.tabsLinks = tabsNav.getElementsByClassName("tabs-link");
         this.tabsContent = tabsEl.getElementsByClassName("tabs-content");
 
-        this.activeIndex = 0;
+        this.activeIndex = 1;
         this.initCalled = false;
     };
 

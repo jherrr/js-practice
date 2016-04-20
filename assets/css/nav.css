@@ -1,4 +1,4 @@
-#navWrap {
+#navFloatWrap {
     height: 95px;
 }
 
@@ -6,34 +6,33 @@
 *    Could use float: left and float: right instead
 */
 .nav {
-    
-}
-
-.float_nav {
-    position: static;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.float_nav-left {
+.nav_float {
+    position: static;
+    height: 100%;
+}
+
+.nav-left {
     flex: 0 1 auto;
     margin-right: auto;
 }
 
-.float_nav-right {
+.nav-right {
     flex: 0 1 auto;
     margin-left: auto;
 }
 
-.float_nav-item {
+.nav-item {
     display: inline-block;
 }
 
-.l-fixed.float_nav {
+.l-fixed.nav_float {
     position: fixed;
     height: 95px;
     top: 0;

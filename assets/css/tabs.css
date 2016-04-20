@@ -1,5 +1,13 @@
 ul {
     list-style-type: none;
+    padding-left: 0px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 1.428;
 }
 
 .tabs-link {
@@ -10,17 +18,31 @@ ul {
     display: none;
 }
 
-.tabs-content.is-tabs-content-active {
-    display: block;
+.is-tabs-content-active {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .tabs-incident {
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: stretch;
     align-items: stretch;
+}
+
+.tabs-incident-nav {
+    flex-basis: 20%;
 }
 
 .tabs-incident-link {
     display: block;
+}
+
+.tabs-incident-content {
+    display: flex;
+    flex-direction: column;
 }

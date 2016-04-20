@@ -3,29 +3,38 @@
 
 <head>
     <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/tabs.css">
-    <link rel="stylesheet" href="assets/css/float_nav.css">
 </head>
 
 <div id="navWrap">
-    <div class="float_nav">
-        <ul class="float_nav-left">
-            <li class="float_nav-item"><b>Incident #9 - DVD Shipment</b></li>
-            <li class="float_nav-item"><button>Open</button></li>
+    <div class="nav nav-float">
+        <ul class="nav-left">
+            <li class="nav-item"><b>Incident #9 - DVD Shipment</b></li>
+            <li class="nav-item"><button>Open</button></li>
         </ul>
-        <ul class="float_nav-right">
-            <li class="float_nav-item"><button>Edit</button></li>
-            <li class="float_nav-item"><button>Resolve</button></li>
+        <ul class="nav-right">
+            <li class="nav-item">
+
+                <button>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <span>Edit</span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <span>Resolve</span>
+                </button>
+            </li>
         </ul>
     </div>
 </div>
 
 <div id="incidentWrap">
     <div class="tabs tabs-incident">
-        <ul class="tabs-nav tabs-incident-nav">
+        <header class="tabs-nav tabs-incident-nav">
             <li class="tabs-link tabs-incident-link">
                 <a href="#">
                     <span>Details</span>
@@ -36,13 +45,22 @@
                     <span>Files</span>
                 </a>
             </li>
-        </ul>
+        </header>
         <div class="tabs-content tabs-incident-content is-tabs-content-active">
             <div class="tabs">
-                <div class="tabs-incident-content-status">
-                    <div
-
-                </div>
+                <header class="nav">
+                    <ul class="nav-left">
+                        <li class="nav-item"><b>Health: </b></li>
+                        <li class="nav-item"><span>On Track</span></li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="nav-item"><b>Owner: </b></li>
+                        <li class="nav-item">
+                            <img src="assets/images/user_icon.png" alt="User Icon">
+                        </li>
+                        <li class="nav-item"><b>Tom Jones</b></li>
+                    </ul>
+                </header>
                 <ul class="tabs-nav">
                     <li class="tabs-link">
                         <a href="#">
@@ -65,24 +83,22 @@
                         </a>
                     </li>
                 </ul>
-                <div class="tabs-content is-tabs-content-active">
-                </div>
                 <div class="tabs-content">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div><b>Description</b> <span>The DVDs have been found in a container
-                                and look to be fake.</span> </div>
-                            <div><b>Incident Type</b> <span>Seizure</span> </div>
-                            <div><b>Infringement Type</b> <span>Trademark</span></div>
-                            <div><b>Incident URL</b> <span>http://myincident.com/19239393</span></div>
-                            <div><b>Incident Text</b> <span>80 DVD Movies</span></div>
-                            <div><b>Notes</b> <span>Demetrio Jayme(415)782-9233, TMK 02-00928</span></div>
-                        </div>
-                        <div class="col-md-6">
-                            <div><b>Incident Date</b> <span>2016-04-12</span> </div>
-                            <div><b>Owner</b> <span>Tom Jones</span> </div>
-                            <div><b>External Incident Num.</b> <span>2016-2809-100454-01</span> </div>
-                        </div>
+                </div>
+                <div class="tabs-content is-tabs-content-active">
+                    <div>
+                        <div><b>Description</b> <span>The DVDs have been found in a container
+                            and look to be fake.</span> </div>
+                        <div><b>Incident Type</b> <span>Seizure</span> </div>
+                        <div><b>Infringement Type</b> <span>Trademark</span></div>
+                        <div><b>Incident URL</b> <span>http://myincident.com/19239393</span></div>
+                        <div><b>Incident Text</b> <span>80 DVD Movies</span></div>
+                        <div><b>Notes</b> <span>Demetrio Jayme(415)782-9233, TMK 02-00928</span></div>
+                    </div>
+                    <div>
+                        <div><b>Incident Date</b> <span>2016-04-12</span> </div>
+                        <div><b>Owner</b> <span>Tom Jones</span> </div>
+                        <div><b>External Incident Num.</b> <span>2016-2809-100454-01</span> </div>
                     </div>
                 </div>
                 <div class="tabs-content">
@@ -90,12 +106,70 @@
                 <div class="tabs-content">
                 </div>
             </div>
+            <div class="list">
+                <header class="nav list-header">
+                    <ul class="nav-left">
+                        <li class="nav-item"><b>PRODUCTS </b></li>
+                        <li class="nav-item"></li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                    </ul>
+                </header>
+                <ul class="list-list">
+                    <li class="list-item">
+                        <span>Entity</span>
+                        <span>Brand</span>
+                        <span>Model</span>
+                        <span>Category</span>
+                        <span>IP</span>
+                    </li>
+                    <li class="list-item">
+                        <span>ERICSSON</span>
+                        <span>Ericsson</span>
+                        <span>MX1219</span>
+                        <span>DVD player</span>
+                        <span>ALPHA</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <header class="nav list-header">
+                    <ul class="nav-left">
+                        <li class="nav-item"><b>RELATED ENTITIES </b></li>
+                        <li class="nav-item"></li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="nav-item">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </header>
+                <ul class="list-list">
+                    <li class="list-item">
+                        <span>Entity</span>
+                        <span>Involved As</span>
+                    </li>
+                    <li class="list-item">
+                        <span>XIA MEN YINLIMIE JUN DE LI CO LTD</span>
+                        <span>Exporter</span>
+                    </li>
+                    <li class="list-item">
+                        <span>JOCELYN SMITH</span>
+                        <span>Importer</span>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="tabs-content tabs-incident-content"></div>
     </div>
 </div>
 
-<script src="assets/js/float_nav.js"></script>
+<script src="assets/js/nav_float.js"></script>
 <script src="assets/js/tabs.js"></script>
 <script src="assets/js/main.js"></script>
 
