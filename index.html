@@ -4,26 +4,28 @@
 <head>
     <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/tabs.css">
+    <link rel="stylesheet" href="assets/css/list.css">
 </head>
 
-<div id="navWrap">
+<div id="nav-wrap">
     <div class="nav nav-float">
         <ul class="nav-left">
-            <li class="nav-item"><b>Incident #9 - DVD Shipment</b></li>
-            <li class="nav-item"><button>Open</button></li>
+            <li class="nav-item"><span id="title">Incident #9 - DVD Shipment</span></li>
+            <li class="nav-item"><button id="open">OPEN</button></li>
         </ul>
         <ul class="nav-right">
             <li class="nav-item">
 
-                <button>
+                <button class="btn-edit">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                     <span>Edit</span>
                 </button>
             </li>
             <li class="nav-item">
-                <button>
+                <button class="btn-edit">
                     <i class="fa fa-check" aria-hidden="true"></i>
                     <span>Resolve</span>
                 </button>
@@ -32,60 +34,61 @@
     </div>
 </div>
 
-<div id="incidentWrap">
+<div id="incident-wrap">
     <div class="tabs tabs-incident">
         <header class="tabs-nav tabs-incident-nav">
-            <li class="tabs-link tabs-incident-link">
-                <a href="#">
+            <li class="tabs-item tabs-incident-item is-tabs-item-active">
+                <a class="tabs-link" href="#">
                     <span>Details</span>
                 </a>
             </li>
-            <li class="tabs-link tabs-incident-link">
-                <a href="#">
+            <li class="tabs-item tabs-incident-item">
+                <a class="tabs-link" href="#">
                     <span>Files</span>
                 </a>
             </li>
         </header>
         <div class="tabs-content tabs-incident-content is-tabs-content-active">
+            <header class="nav nav-status">
+                <ul class="nav-left">
+                    <li class="nav-item"><b>Health:</b></li>
+                    <li class="nav-item"><span id="health-status">On Track</span></li>
+                </ul>
+                <ul class="nav-right">
+                    <li class="nav-item"><b>Owner:</b></li>
+                    <li class="nav-item">
+                        <img src="assets/images/user_icon.png" alt="User Icon">
+                    </li>
+                    <li class="nav-item"><b>Tom Jones</b></li>
+                </ul>
+            </header>
             <div class="tabs">
-                <header class="nav">
-                    <ul class="nav-left">
-                        <li class="nav-item"><b>Health: </b></li>
-                        <li class="nav-item"><span>On Track</span></li>
-                    </ul>
-                    <ul class="nav-right">
-                        <li class="nav-item"><b>Owner: </b></li>
-                        <li class="nav-item">
-                            <img src="assets/images/user_icon.png" alt="User Icon">
-                        </li>
-                        <li class="nav-item"><b>Tom Jones</b></li>
-                    </ul>
-                </header>
+
                 <ul class="tabs-nav">
-                    <li class="tabs-link">
-                        <a href="#">
+                    <li class="tabs-item is-tabs-item-active">
+                        <a href="#" class="tabs-link">
                             <span>SUMMARY</span>
                         </a>
                     </li>
-                    <li class="tabs-link">
-                        <a href="#">
+                    <li class="tabs-item">
+                        <a href="#" class="tabs-link">
                             <span>BASIC INFO</span>
                         </a>
                     </li>
-                    <li class="tabs-link">
-                        <a href="#">
+                    <li class="tabs-item">
+                        <a href="#" class="tabs-link">
                             <span>REPORTING INFO</span>
                         </a>
                     </li>
-                    <li class="tabs-link">
-                        <a href="#">
+                    <li class="tabs-item">
+                        <a href="#" class="tabs-link">
                             <span>ADDRESS</span>
                         </a>
                     </li>
                 </ul>
-                <div class="tabs-content">
-                </div>
                 <div class="tabs-content is-tabs-content-active">
+                </div>
+                <div class="tabs-content">
                     <div>
                         <div><b>Description</b> <span>The DVDs have been found in a container
                             and look to be fake.</span> </div>
@@ -106,63 +109,65 @@
                 <div class="tabs-content">
                 </div>
             </div>
-            <div class="list">
-                <header class="nav list-header">
-                    <ul class="nav-left">
-                        <li class="nav-item"><b>PRODUCTS </b></li>
-                        <li class="nav-item"></li>
-                    </ul>
-                    <ul class="nav-right">
-                        <li class="nav-item"></li>
-                        <li class="nav-item"></li>
-                    </ul>
-                </header>
-                <ul class="list-list">
-                    <li class="list-item">
-                        <span>Entity</span>
-                        <span>Brand</span>
-                        <span>Model</span>
-                        <span>Category</span>
-                        <span>IP</span>
-                    </li>
-                    <li class="list-item">
-                        <span>ERICSSON</span>
-                        <span>Ericsson</span>
-                        <span>MX1219</span>
-                        <span>DVD player</span>
-                        <span>ALPHA</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="list">
-                <header class="nav list-header">
-                    <ul class="nav-left">
-                        <li class="nav-item"><b>RELATED ENTITIES </b></li>
-                        <li class="nav-item"></li>
-                    </ul>
-                    <ul class="nav-right">
-                        <li class="nav-item">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
+            <div id="lists">
+                <div class="list">
+                    <header class="list-header">
+                        <ul class="list-header-left">
+                            <li class="list-header-item"><b>PRODUCTS </b></li>
+                            <li class="list-header-item"></li>
+                        </ul>
+                        <ul class="list-header-right">
+                            <li class="list-header-item"></li>
+                            <li class="list-header-item"></li>
+                        </ul>
+                    </header>
+                    <ul class="list-list">
+                        <li class="list-row">
+                            <div class="list-cell-20">Entity</div>
+                            <div class="list-cell-20">Brand</div>
+                            <div class="list-cell-20">Model</div>
+                            <div class="list-cell-20">Category</div>
+                            <div class="list-cell-20">IP</div>
                         </li>
-                        <li class="nav-item">
-                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        <li class="list-row">
+                            <div class="list-cell-20">ERICSSON</div>
+                            <div class="list-cell-20">Ericsson</div>
+                            <div class="list-cell-20">MX1219</div>
+                            <div class="list-cell-20">DVD player</div>
+                            <div class="list-cell-20">ALPHA</div>
                         </li>
                     </ul>
-                </header>
-                <ul class="list-list">
-                    <li class="list-item">
-                        <span>Entity</span>
-                        <span>Involved As</span>
-                    </li>
-                    <li class="list-item">
-                        <span>XIA MEN YINLIMIE JUN DE LI CO LTD</span>
-                        <span>Exporter</span>
-                    </li>
-                    <li class="list-item">
-                        <span>JOCELYN SMITH</span>
-                        <span>Importer</span>
-                    </li>
-                </ul>
+                </div>
+                <div class="list">
+                    <header class="list-header">
+                        <ul class="list-header-left">
+                            <li class="list-header-item"><b>RELATED ENTITIES </b></li>
+                            <li class="list-header-item"></li>
+                        </ul>
+                        <ul class="list-header-right">
+                            <li class="list-header-item">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </li>
+                            <li class="list-header-item">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </header>
+                    <ul class="list-list">
+                        <li class="list-row">
+                            <div class="list-cell-66">Entity</div>
+                            <div class="list-cell-33">Involved As</div>
+                        </li>
+                        <li class="list-row">
+                            <div class="list-cell-66">XIA MEN YINLIMIE JUN DE LI CO LTD</div>
+                            <div class="list-cell-33">Exporter</div>
+                        </li>
+                        <li class="list-row">
+                            <div class="list-cell-66">JOCELYN SMITH</div>
+                            <div class="list-cell-33">Importer</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="tabs-content tabs-incident-content"></div>

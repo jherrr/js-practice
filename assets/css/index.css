@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 1.428;
+    margin: 0;
+}
+
+#open {
+    color: #53B95B;
+    border: 1px solid #53B95B;
+    background-color: transparent;
+    font-size: 12px;
+    font-style: italic;
+    padding: 5px 10px;
+}
+
+#title {
+    font-size: 22px;
+}
+
+.btn-edit {
+    color: #8690BA;
+    border-color: ;
+    border:1px solid #8690BA;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+#health-status {
+    color: #52B95A;
+}
+
+#incident-wrap {
+    width: 100 vw;
+    min-height: 500px;
+}
+
+#lists {
+    background-color: #30697C;
+    margin-top: auto;
+    padding: 20px;
+}

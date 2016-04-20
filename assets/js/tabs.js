@@ -8,10 +8,10 @@
     var Tabs = function(tabsEl) {
         this.tabs = tabsEl
         var tabsNav = this.tabsNav = (tabsEl.getElementsByClassName("tabs-nav"))[0];
-        this.tabsLinks = tabsNav.getElementsByClassName("tabs-link");
+        this.tabsLinks = tabsNav.getElementsByClassName("tabs-item");
         this.tabsContent = tabsEl.getElementsByClassName("tabs-content");
 
-        this.activeIndex = 1;
+        this.activeIndex = 0;
         this.initCalled = false;
     };
 
@@ -38,15 +38,16 @@
     };
 
     Tabs.prototype.goToTab = function(idx) {
-
         var links = this.tabsLinks;
         var content = this.tabsContent;
         var activeIdx = this.activeIndex;
 
+        console.log("jeff");
+
         if( idx !== activeIdx && idx >=0 && idx < links.length ) {
-            links[activeIdx].classList.remove("is-tabs-link-active");
+            links[activeIdx].classList.remove("is-tabs-item-active");
             content[activeIdx].classList.remove("is-tabs-content-active");
-            links[idx].classList.add("is-tabs-link-active");
+            links[idx].classList.add("is-tabs-item-active");
             content[idx].classList.add("is-tabs-content-active");
             this.activeIndex = idx;
         }

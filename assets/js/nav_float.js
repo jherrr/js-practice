@@ -13,12 +13,9 @@
 
     Nav.prototype.init = function() {
         var that = this;
-        console.log("hihi");
         window.addEventListener("scroll", function(event) {
             var scrollTop = window.scrollY;
             var shouldBeFixed = scrollTop > that.navHomeY;
-
-            console.log("hi");
 
             if( shouldBeFixed && !that.isFixed ) {
                 that.navEl.classList.add("l-fixed");
