@@ -18,6 +18,8 @@
             var scrollTop = window.scrollY;
             var shouldBeFixed = scrollTop > that.navHomeY;
 
+            console.log();
+
             if( shouldBeFixed && !that.isFixed ) {
                 that.navEl.classList.add("l-fixed");
                 that.isFixed = true;
