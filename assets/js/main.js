@@ -9,7 +9,7 @@
         tabsObj.init();
     }
 
-    var floatNavCollection = document.querySelectorAll(".float_nav");
+    var floatNavCollection = document.querySelectorAll(".nav-float");
 
     for( var idx = 0; idx < floatNavCollection.length; idx++) {
         var floatNavObj = new Components.FloatNav(floatNavCollection[idx]);

@@ -34,7 +34,7 @@ body {
 }
 
 .tabs-incident-nav {
-    flex-basis: 20%;
+    width: 100px;
 }
 
 .tabs-incident-link {
